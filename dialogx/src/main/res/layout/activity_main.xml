@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/parent_ll">
+
+    <TextView
+        android:id="@+id/messageDialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="基础对话框 MessageDialog和 输入对话框 InputDialog" />
+
+    <TextView
+        android:id="@+id/waitDialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="等待框 WaitDialog 和提示框 TipDialog" />
+
+    <TextView
+        android:id="@+id/bottomDialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="底部对话框 BottomDialog 和底部菜单 BottomMenu" />
+
+    <TextView
+        android:id="@+id/topTipDialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="简单提示 PopTip" />
+
+    <TextView
+        android:id="@+id/fullScreenDialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="全屏对话框 FullScreenDialog" />
+
+</LinearLayout>

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "com.android.androidknowledge"
+        applicationId "com.android.dialogx"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
@@ -29,10 +29,14 @@ android {
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //dialog 不需要context 任意线程都可以
+    implementation 'com.kongzue.dialogx:DialogX:0.0.35'
 }
