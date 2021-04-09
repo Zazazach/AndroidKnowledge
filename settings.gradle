@@ -1,3 +1,4 @@
+include ':StudyIntDef'
 include ':dialogx'
 include ':app'
 rootProject.name = "AndroidKnowledge"
