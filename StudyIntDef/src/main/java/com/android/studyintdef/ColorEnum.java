@@ -6,11 +6,15 @@ import java.util.Map;
 /**
  * @author zach
  */
-public enum ColorEnum {
+public enum ColorEnum implements Behaviour {
 
+    //1
     RED("red", "红色"),
+    //1
     GREEN("green", "绿色"),
+    //1
     WHITE("white", "白色"),
+    //1
     YELLOW("yellow", "黄色");
 
     // 成员变量
@@ -23,12 +27,23 @@ public enum ColorEnum {
         this.value = value;
     }
 
+    //1
     public String getName() {
         return name;
     }
 
+    //1
     public String getValue() {
         return value;
+    }
+
+    public ColorEnum getEnum(String name){
+        for (ColorEnum colorEnum : ColorEnum.values()) {
+            if (colorEnum.getName().equals(name)){
+                return colorEnum;
+            }
+        }
+        return null;
     }
 
     // 将数据缓存到map中
@@ -45,4 +60,13 @@ public enum ColorEnum {
         return map.get(name);
     }
 
+    @Override
+    public void print() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return null;
+    }
 }

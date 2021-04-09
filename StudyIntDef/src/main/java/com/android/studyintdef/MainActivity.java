@@ -26,20 +26,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 for (ColorEnum color : ColorEnum.values()) {
-                    switch (color) {
-                        case RED:
-                            Log.e("MainActivity", color.getName() + color.getValue());
-                            break;
-                        case GREEN:
-                            Log.e("MainActivity", color.getName() + color.getValue());
-                            break;
-                        case WHITE:
-                            Log.e("MainActivity", color.getName() + color.getValue());
-                            break;
-                        case YELLOW:
-                            Log.e("MainActivity", color.getName() + color.getValue());
-                            break;
-                    }
+                    Log.e("MainActivity", "color.getEnum(color.getName()):" + color.getEnum(color.getName()));
+
+//                    switch (color) {
+//                        case RED:
+//                            Log.e("MainActivity", color.getName() + color.getValue());
+//                            break;
+//                        case GREEN:
+//                            Log.e("MainActivity", color.getName() + color.getValue());
+//                            break;
+//                        case WHITE:
+//                            Log.e("MainActivity", color.getName() + color.getValue());
+//                            break;
+//                        case YELLOW:
+//                            Log.e("MainActivity", color.getName() + color.getValue());
+//                            break;
+//                    }
                 }
             }
         });
