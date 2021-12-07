@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
 }
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.Zazazach'
 
 android {
     compileSdkVersion 30
