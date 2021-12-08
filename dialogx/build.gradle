@@ -40,5 +40,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     //dialog 不需要context 任意线程都可以
-    implementation 'com.kongzue.dialogx:DialogX:0.0.35'
+    api 'com.kongzue.dialogx:DialogX:0.0.35'
 }
